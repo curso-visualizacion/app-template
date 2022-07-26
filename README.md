@@ -1,1 +1,1 @@
-# app-template
+# dashboard-template

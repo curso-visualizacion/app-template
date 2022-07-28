@@ -47,4 +47,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ inputs.tags }}
+          tags: ${{ needs.get_tags.outputs.tags }}

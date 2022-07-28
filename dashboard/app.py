@@ -1,6 +1,6 @@
 from dash import Dash, html
 
-app = Dash(__name__)
+app = Dash(__name__, serve_locally=False)
 
 app.layout = html.Div(children="Hello World")
 

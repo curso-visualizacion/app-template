@@ -1,8 +1,7 @@
 from dash import Dash, html
-from flask import Flask
 
-server = Flask(__name__)
-app = Dash(__name__, server=server)
+app = Dash(__name__, requests_pathname_prefix="/example")
+server = app.server
 
 app.layout = html.Div(children="Hello World")
 
